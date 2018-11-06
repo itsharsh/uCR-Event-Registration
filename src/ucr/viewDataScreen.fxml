@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucr.viewDataScreenController">
+   <children>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="14.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="columnTeamID" editable="false" minWidth="-Infinity" prefWidth="80.99996948242188" resizable="false" text="Team ID" />
+          <TableColumn fx:id="columnEnrollmentNo" editable="false" minWidth="-Infinity" prefWidth="130.0" resizable="false" text="Enrollment No." />
+            <TableColumn fx:id="columnName" editable="false" minWidth="-Infinity" prefWidth="190.0" resizable="false" text="Name" />
+            <TableColumn fx:id="columnBranch" editable="false" minWidth="-Infinity" prefWidth="76.0" resizable="false" text="Branch" />
+            <TableColumn fx:id="columnSector" editable="false" minWidth="-Infinity" prefWidth="70.0" resizable="false" text="Sector" />
+            <TableColumn fx:id="columnHosteler" editable="false" minWidth="-Infinity" resizable="false" text="Hosteler" />
+            <TableColumn fx:id="columnContactNo" editable="false" minWidth="-Infinity" prefWidth="130.0" resizable="false" text="Contact No." />
+            <TableColumn fx:id="columnWhatsappNo" editable="false" minWidth="-Infinity" prefWidth="130.0" resizable="false" text="WhatsApp No." />
+            <TableColumn fx:id="columnEmail" editable="false" minWidth="-Infinity" prefWidth="220.0" resizable="false" text="E-mail ID" />
+            <TableColumn fx:id="columnPayment" editable="false" minWidth="-Infinity" resizable="false" text="Payment" />
+            <TableColumn fx:id="columnAmount" editable="false" minWidth="-Infinity" resizable="false" text="Amount" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

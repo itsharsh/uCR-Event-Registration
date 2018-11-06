@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucr.loginScreenController">
+   <children>
+      <ImageView fitHeight="470.0" fitWidth="300.0" pickOnBounds="true">
+         <image>
+            <Image url="@ucr.jpg" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" layoutY="265.0" prefHeight="200.0" prefWidth="300.0" spacing="10.0">
+         <children>
+            <HBox alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="300.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="84.0" text="Username : " />
+                  <TextField fx:id="txtUsername" alignment="BASELINE_LEFT" promptText="Username" />
+               </children>
+            </HBox>
+            <HBox alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="300.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="84.0" text="Password :  " />
+                  <PasswordField fx:id="txtPassword" promptText="Password" />
+               </children>
+            </HBox>
+            <HBox alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="300.0" spacing="10.0">
+               <children>
+                  <Label text="User Level : " />
+                  <ComboBox fx:id="comboUserLevel" onAction="#userLevelChanged" promptText="&lt;Select User&gt;" />
+               </children>
+            </HBox>
+            <Button fx:id="btnLogin" alignment="CENTER" mnemonicParsing="false" onAction="#logIn" text="Login" />
+            <Label fx:id="lblLoginStatus" alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" textOverrun="CENTER_WORD_ELLIPSIS" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
